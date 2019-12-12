@@ -1,1 +1,19 @@
-<h1>Welcome from new post page</h1>
+<h1>Create a New Post!</h1>
+
+<%= form_for :post, url:posts_path do |f| %>
+
+<p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+</p>
+
+<p>
+    <%= f.label :text%>
+    <%= f.text_area :text %>
+<p>
+
+<p>
+    <%= f.submit%>
+</p>
+
+<% end %>
